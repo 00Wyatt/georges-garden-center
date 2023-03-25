@@ -1,0 +1,82 @@
+// Import functions file:
+@import '../node_modules/bootstrap/scss/functions';
+
+// Custom variables:
+// Colors:
+$white: #fafffd;
+$black: #000f0a;
+
+$gray-50: #f2f3f2;
+$gray-100: #e4e7e6;
+$gray-200: #c9cfcd;
+$gray-300: #afb6b4;
+$gray-400: #949e9b;
+$gray-500: #798682;
+$gray-600: #616b68;
+$gray-700: #49504e;
+$gray-800: #303634;
+$gray-900: #181b1a;
+
+$primary: #468672;
+$secondary: #364a63;
+
+// Spacing:
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  // 4px
+  1: $spacer * 0.25,
+  // 8px
+  2: $spacer * 0.5,
+  // 16px
+  3: $spacer,
+  // 24px
+  4: $spacer * 1.5,
+  // 32px
+  5: $spacer * 2,
+  // 40px
+  6: $spacer * 2.5,
+  // 48px
+  7: $spacer * 3,
+  // 56px
+  8: $spacer * 3.5,
+  // 64px
+  9: $spacer * 4,
+  // 72px
+  10: $spacer * 4.5,
+);
+
+// Import variables and mixins files:
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+// Anything that depends on variables/mixins files:
+$custom-theme-colors: (
+  'tertiary': #d7b98e,
+  'accent': #c46e74,
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+$new-gray: (
+  '50': $gray-50,
+);
+$grays: map-merge($new-gray, $grays);
+
+// Add gray color classes:
+@each $shade, $val in $grays {
+  .bg-gray-#{$shade} {
+    background-color: $val;
+  }
+  .text-gray-#{$shade} {
+    color: $val;
+  }
+}
+
+// Import utilities and maps files:
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/utilities';
+
+// Anything that depends on utilities/maps files:
+
+// Import main Bootstrap file:
+@import '../node_modules/bootstrap/scss/bootstrap';
