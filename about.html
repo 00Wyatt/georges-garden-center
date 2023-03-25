@@ -13,8 +13,9 @@
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid mx-sm-2 mx-lg-7 mx-xxl-10 my-1 my-sm-2">
-      <a class="navbar-brand me-lg-4" href="./index.html">George's Garden Center</a>
+    <div class="container-fluid mx-md-5 mx-xl-7 my-1 my-sm-2 px-md-0">
+      <a class="navbar-brand me-lg-4 p-0" href="./index.html"><img src="./assets/svgs/logo.svg" height="40"
+          alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,13 +56,13 @@
     </div>
   </nav>
 
-  <!-- Header One -->
+  <!-- Header -->
   <div class="px-4 py-3 my-5 text-center">
-    <h1 class="display-5 fw-bold">About George's Garden Center</h1>
+    <h1 class="display-5 fw-bold text-primary">About George's Garden Center</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-        popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-        prebuilt components, and powerful JavaScript plugins.</p>
+      <p class="lead mb-4">Our mission is to provide garden enthusiasts of all levels with everything they need to
+        create and maintain beautiful outdoor spaces. From plants and tools to fertilizers and pots, we offer a wide
+        selection of high-quality products to meet your gardening needs.</p>
     </div>
   </div>
 
@@ -76,37 +77,43 @@
   </div>
 
   <!-- About Section -->
-  <div class="container-fluid px-md-5 px-xl-7 py-2 cs-home-about">
+  <div class="container-fluid px-md-5 px-xl-7 py-8 cs-about">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-lg-6">
-        <div class="cs-about-image rounded shadow"></div>
+        <div class="cs-about-image cs-about-image-page rounded shadow"></div>
       </div>
       <div class="col-lg-6 pe-xl-8">
-        <h1 class="display-5 fw-bold lh-1 mb-3">We Like Gardening</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-          popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-          prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-flex justify-content-center justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Learn more about us</button>
-        </div>
+        <h1 class="display-5 fw-bold text-primary lh-1 mb-3">We love gardening</h1>
+        <p class="fs-5">Our story began over 25 years ago, when George, our founder, decided to turn his love of
+          gardening into a business. Starting with a small nursery and a handful of plants, he worked tirelessly to
+          create a space that would inspire and delight gardeners of all skill levels.</p>
+        <p class="fs-5">Today, George's Garden Center is a thriving business that offers a wide range of products and
+          services. From plants and seeds to tools and accessories, we have everything you need to create a beautiful
+          and thriving garden. Our friendly and knowledgeable staff is always on hand to provide expert advice and
+          assistance, whether you're a seasoned gardener or just getting started.</p>
+        <p class="fs-5">We're committed to sustainability and eco-friendliness, and we work with our suppliers to ensure
+          that our products are responsibly sourced and produced. We believe that gardening is not just a hobby, but a
+          way to connect with nature and promote a healthy and sustainable lifestyle.</p>
+        <p class="fs-5">Whether you're an experienced gardener or just getting started, we invite you to come visit us
+          at George's Garden Center and see how we can help you create a garden that you'll love for years to come.</p>
       </div>
     </div>
   </div>
 
-  <div class="px-4 py-3 my-5">
+  <!-- Subscribe Section -->
+  <div class="px-4 py-3 mt-2 mt-sm-5 mb-6">
     <div class="col-lg-6 mx-auto text-center">
-      <h1 class="display-5 fw-bold">Subscribe to our Newsletter</h1>
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-        popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-        prebuilt components, and powerful JavaScript plugins.</p>
+      <h1 class="display-5 fw-bold text-primary">Subscribe to our Newsletter</h1>
+      <p class="lead mb-4">Join our community of garden enthusiasts and get access to exclusive content, tips, and
+        inspiration. Subscribing to our newsletter is easy – just enter your email address and start receiving our
+        monthly updates straight to your inbox.</p>
     </div>
     <div class="col-lg-6 mx-auto">
       <form class="d-flex justify-content-center justify-content-md-between align-items-center">
         <div class="mb-3 w-100">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <div class="d-flex gap-3">
-            <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Subscribe</button>
           </div>
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -115,13 +122,28 @@
     </div>
   </div>
 
+  <!-- Payments Banner -->
+  <div class="bg-primary">
+    <div
+      class="container-fluid px-md-5 px-xl-7 py-3 d-flex flex-column flex-lg-row gap-2 justify-content-between align-items-center">
+      <p class="fs-5 fw-semibold text-white text-center mb-0">We look forward to helping you create your garden</p>
+      <div class="d-flex gap-1 gap-sm-3">
+        <img class="payment-icons" width="48px" src="./assets/svgs/visa-outline.svg" alt="">
+        <img class="payment-icons" width="48px" src="./assets/svgs/mastercard-outline.svg" alt="">
+        <img class="payment-icons" width="48px" src="./assets/svgs/applepay-outline.svg" alt="">
+        <img class="payment-icons" width="48px" src="./assets/svgs/paypal-outline.svg" alt="">
+        <img class="payment-icons" width="48px" src="./assets/svgs/amex-outline.svg" alt="">
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <div class="cs-footer">
     <div class="container">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-6 my-5 border-bottom">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-6 mb-5 border-bottom">
         <div class="col mb-3">
           <a href="./index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none fs-5">
-            George's Garden Center
+            <img src="./assets/svgs/logo-alt.svg" height="64" alt="Logo">
           </a>
         </div>
         <div class="col mb-3">

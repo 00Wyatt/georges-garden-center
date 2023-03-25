@@ -90,13 +90,20 @@
   }
 }
 
-// Homepage about section
-.cs-home-about {
+// About sections
+.cs-about {
   .cs-about-image {
-    background-image: url('../assets/images/gardening-1.jpg');
     background-size: cover;
     background-position: center;
     height: 360px;
+
+    &-section {
+      background-image: url('../assets/images/gardening-1.jpg');
+    }
+
+    &-page {
+      background-image: url('../assets/images/gardening-3.jpg');
+    }
   }
   @media all and (min-width: 668px) {
     .cs-about-image {
