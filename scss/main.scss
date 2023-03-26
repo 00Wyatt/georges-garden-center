@@ -90,6 +90,21 @@
   }
 }
 
+// Homepage contact section
+.cs-home-contact {
+  .cs-contact-image {
+    background-image: url('../assets/images/gardening-2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 360px;
+  }
+  @media all and (min-width: 668px) {
+    .cs-contact-image {
+      height: 600px;
+    }
+  }
+}
+
 // About sections
 .cs-about {
   .cs-about-image {
@@ -112,21 +127,6 @@
   }
 }
 
-// Homepage contact section
-.cs-home-contact {
-  .cs-contact-image {
-    background-image: url('../assets/images/gardening-2.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 360px;
-  }
-  @media all and (min-width: 668px) {
-    .cs-contact-image {
-      height: 600px;
-    }
-  }
-}
-
 // YouTube videos
 .cs-video-wrapper {
   position: relative;
@@ -144,6 +144,21 @@
 // Payments banner
 .payment-icons {
   color: $white;
+}
+
+// Map component
+.cs-map {
+  height: 360px;
+}
+@media all and (min-width: 668px) {
+  .cs-map {
+    height: 560px;
+  }
+}
+
+// Contact form
+.cs-contact-form {
+  max-width: 976px;
 }
 
 // Footer
