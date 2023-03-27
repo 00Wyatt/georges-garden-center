@@ -22,7 +22,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3 fw-semibold">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2 gap-xl-4 fw-semibold">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
@@ -51,15 +51,15 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-primary text-white" type="submit"><i class="bi bi-search"></i></button>
           </form>
-          <a type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-person"></i></a>
-          <a type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-cart2"></i></a>
+          <button type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-person"></i></button>
+          <button type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-cart2"></i></button>
         </div>
       </div>
     </div>
   </nav>
 
   <!-- Hero Carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide cs-hero-carousel">
+  <header id="carouselExampleCaptions" class="carousel slide cs-hero-carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -72,25 +72,25 @@
       <div class="carousel-item active cs-hero-carousel">
         <img src="./assets/images/garden-1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="fs-3">High-quality, healthy plants.</h5>
+          <p class="fs-3 fw-semibold mb-1">High-quality, healthy plants.</p>
           <p class="fs-5">Our knowledgeable staff can help you find the right plant for your needs.</p>
-          <a class="btn btn-light" href="#">Shop All Plants</a>
+          <a class="btn btn-light" href="./products.html">Shop All Plants</a>
         </div>
       </div>
       <div class="carousel-item cs-hero-carousel">
         <img src="./assets/images/garden-2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="fs-3">Keep your garden looking its best.</h5>
+          <p class="fs-3 fw-semibold mb-1">Keep your garden looking its best.</p>
           <p class="fs-5">With the right tools, maintaining your garden can be a breeze.</p>
-          <a class="btn btn-light" href="#">Shop Garden Tools</a>
+          <a class="btn btn-light" href="./products.html">Shop Garden Tools</a>
         </div>
       </div>
       <div class="carousel-item cs-hero-carousel">
         <img src="./assets/images/garden-3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="fs-3">Fertilizers to suit any gardening style.</h5>
+          <p class="fs-3 fw-semibold mb-1">Fertilizers to suit any gardening style.</p>
           <p class="fs-5">Healthy plants start with healthy soil and proper nutrition.</p>
-          <a class="btn btn-light" href="#">Shop Fertilizers</a>
+          <a class="btn btn-light" href="./products.html">Shop Fertilizers</a>
         </div>
       </div>
     </div>
@@ -102,10 +102,10 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </header>
 
   <!-- Header One -->
-  <div class="px-4 py-3 my-5 text-center">
+  <section class="px-4 py-3 my-5 text-center">
     <h1 class="display-5 fw-bold text-primary">George's Garden Center</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-3">We're passionate about helping you create the perfect outdoor oasis. Whether you're an
@@ -113,72 +113,71 @@
         garden flourish.</p>
       <a href="./about.html" class="btn btn-outline-primary">Learn More</a>
     </div>
-  </div>
+  </section>
 
   <!-- YouTube Video -->
   <div class="container-fluid px-md-5 px-xl-7">
     <div class="cs-video-wrapper">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LJyPaF38-h4?&autoplay=1&mute=1"
-        title="YouTube video player" frameborder="0"
+      <iframe src="https://www.youtube.com/embed/LJyPaF38-h4?&autoplay=1&mute=1" title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
   </div>
 
   <!-- Header Two -->
-  <div class="px-4 py-3 my-5 text-center">
-    <h1 class="display-5 fw-bold text-primary">Your one-stop-shop for all things gardening</h1>
+  <section class="px-4 py-3 my-5 text-center">
+    <h2 class="display-5 fw-bold text-primary">Your one-stop-shop for all things gardening</h2>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">Our expansive selection of plants, tools, and accessories has everything you need to create a
         stunning outdoor space. With our friendly and knowledgeable staff, you'll always get the advice and assistance
         you need to succeed in your gardening endeavors.</p>
     </div>
-  </div>
+  </section>
 
   <!-- Product Category Cards -->
-  <div class="container-fluid cs-home-products">
+  <section class="container-fluid cs-home-products">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-3 gy-lg-0 my-4 my-md-6 mx-md-2 mx-xl-4">
       <div class="col">
         <div class="cs-image-card cs-card-1 shadow">
           <div class="cs-card-text">
-            <h5 class="card-title">Gifts that any gardener will love.</h5>
+            <h3 class="card-title fs-5">Gifts that any gardener will love.</h3>
             <p class="card-text">Looking for the perfect gift for the gardener in your life? Check out our selection of
               gardening tools, books, and accessories.</p>
-            <a class="btn btn-light" href="#">Shop Gifts</a>
+            <a class="btn btn-light" href="./products.html">Shop Gifts</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="cs-image-card cs-card-2 shadow">
           <div class="cs-card-text">
-            <h5 class="card-title">The perfect additions to your garden.</h5>
+            <h3 class="card-title fs-5">The perfect additions to your garden.</h3>
             <p class="card-text">Our plants are sourced from the best growers in the business, ensuring that you get the
               highest quality specimens for your garden.</p>
-            <a class="btn btn-light" href="#">Shop Plants</a>
+            <a class="btn btn-light" href="./products.html">Shop Plants</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="cs-image-card cs-card-3 shadow">
           <div class="cs-card-text">
-            <h5 class="card-title">A variety of pots in all shapes and sizes.</h5>
+            <h3 class="card-title fs-5">A variety of pots in all shapes and sizes.</h3>
             <p class="card-text">We believe that the right pot can elevate any plant and turn it into a true
               centerpiece.</p>
-            <a class="btn btn-light" href="#">Shop Pots</a>
+            <a class="btn btn-light" href="./products.html">Shop Pots</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- About Section -->
-  <div class="container-fluid px-md-5 px-xl-7 py-2 cs-about">
+  <section class="container-fluid px-md-5 px-xl-7 py-2 cs-about">
     <div class="row flex-lg-row align-items-center g-5 py-5">
       <div class="col-lg-6">
         <div class="cs-about-image cs-about-image-section rounded shadow"></div>
       </div>
       <div class="col-lg-6 pe-xl-8">
-        <h1 class="display-5 fw-bold text-primary lh-1 mb-3">Garden enthusiasts</h1>
+        <h2 class="display-5 fw-bold text-primary lh-1 mb-3">Garden enthusiasts</h2>
         <p class="lead">At George's Garden Center, we're a team of passionate gardeners who are dedicated to helping you
           create the outdoor space of your dreams. We believe that gardening is a joyful and rewarding experience, and
           we're committed to providing our customers with the tools, knowledge, and inspiration they need to succeed.
@@ -188,16 +187,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Contact Section -->
-  <div class="container-fluid px-md-5 px-xl-7 py-2 cs-home-contact">
+  <section class="container-fluid px-md-5 px-xl-7 py-2 cs-home-contact">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-lg-6">
         <div class="cs-contact-image rounded shadow"></div>
       </div>
       <div class="col-lg-6 pe-xl-8">
-        <h1 class="display-5 fw-bold text-primary lh-1 mb-3">Subscribe to our Newsletter</h1>
+        <h2 class="display-5 fw-bold text-primary lh-1 mb-3">Subscribe to our Newsletter</h2>
         <p class="lead">Don't miss out on our latest gardening tips, product updates, and special promotions.</p>
         <form class="d-flex justify-content-center justify-content-md-between align-items-center">
           <div class="mb-3 w-100">
@@ -211,7 +210,7 @@
         </form>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Payments Banner -->
   <div class="bg-primary">
@@ -219,18 +218,17 @@
       class="container-fluid px-md-5 px-xl-7 py-3 d-flex flex-column flex-lg-row gap-2 justify-content-between align-items-center">
       <p class="fs-5 fw-semibold text-white text-center mb-0">We look forward to helping you create your garden</p>
       <div class="d-flex gap-1 gap-sm-3">
-        <img class="payment-icons" width="48px" src="./assets/svgs/visa-outline.svg" alt="">
-        <img class="payment-icons" width="48px" src="./assets/svgs/mastercard-outline.svg" alt="">
-        <img class="payment-icons" width="48px" src="./assets/svgs/applepay-outline.svg" alt="">
-        <img class="payment-icons" width="48px" src="./assets/svgs/paypal-outline.svg" alt="">
-        <img class="payment-icons" width="48px" src="./assets/svgs/amex-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/visa-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/mastercard-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/applepay-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/paypal-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/amex-outline.svg" alt="">
       </div>
     </div>
   </div>
 
-
   <!-- Footer -->
-  <div class="cs-footer">
+  <section class="cs-footer">
     <div class="container">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-6 mb-5 border-bottom">
         <div class="col mb-3">
@@ -239,16 +237,16 @@
           </a>
         </div>
         <div class="col mb-3">
-          <h5>Menu</h5>
+          <h3 class="fs-5">Menu</h3>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Home</a></li>
             <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-muted">About</a></li>
             <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-muted">Contact</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Site Map</a></li>
+            <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted">Site Map</a></li>
           </ul>
         </div>
         <div class="col mb-3">
-          <h5>Products</h5>
+          <h3 class="fs-5">Products</h3>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-muted">Plants</a></li>
             <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-muted">Pots</a></li>
@@ -259,16 +257,16 @@
         </div>
         <div class="col mb-3">
           <ul class="nav justify-content-center list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-tiktok"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="/"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="/"><i class="bi bi-facebook"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="/"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="/"><i class="bi bi-tiktok"></i></a></li>
           </ul>
         </div>
       </footer>
       <p class="text-center text-muted pb-4 mb-0">&copy; 2023 George's Garden Center. All rights reserved.</p>
     </div>
-  </div>
+  </section>
 
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

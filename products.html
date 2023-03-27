@@ -21,7 +21,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3 fw-semibold">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2 gap-xl-4 fw-semibold">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
@@ -50,38 +50,38 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-primary text-white" type="submit"><i class="bi bi-search"></i></button>
           </form>
-          <a type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-person"></i></a>
-          <a type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-cart2"></i></a>
+          <button type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-person"></i></button>
+          <button type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-cart2"></i></button>
         </div>
       </div>
     </div>
   </nav>
 
   <!-- Header -->
-  <div class="px-4 py-3 mt-5 text-center">
+  <header class="px-4 py-3 mt-5 text-center">
     <h1 class="display-5 fw-bold text-primary">Plants</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead">Our plants are sourced from the best growers in the business, ensuring that you get the
         highest quality specimens for your garden.</p>
     </div>
-  </div>
+  </header>
 
   <!-- Products Main Content -->
-  <div class="row container-fluid px-md-5 px-xl-7 mx-0 pb-5 border-bottom">
+  <section class="row container-fluid px-md-5 px-xl-7 mx-0 pb-5 border-bottom">
 
 
     <!-- Filter Offcavas -->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-      aria-labelledby="offcanvasWithBothOptionsLabel">
+    <aside class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptions">
       <div class="p-3">
-        <h3 class="fs-5 fw-semibold pb-3 mb-3 border-bottom">
+        <h2 class="fs-5 fw-semibold pb-3 mb-3 border-bottom">
           Filter Products
-        </h3>
+        </h2>
         <div class="mb-2">
           <label for="customRange1" class="form-label fs-6 fw-semibold">Price</label>
           <input type="range" class="form-range" id="customRange1">
         </div>
-        <h4 class="fs-6">Plants</h4>
+        <h3 class="fs-6">Plants</h3>
         <ul class="list-unstyled">
           <li class="mb-1 form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
@@ -145,7 +145,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </aside>
 
     <!-- Sort/Filter Products Button -->
     <div class="col-12 mb-4 d-flex justify-content-between justify-content-lg-end">
@@ -170,16 +170,16 @@
     </div>
 
     <!-- Filter Sidebar -->
-    <div class="d-none d-lg-block col-lg-3 col-xl-2">
+    <aside class="d-none d-lg-block col-lg-3 col-xl-2">
       <div class="p-3">
-        <h3 class="fs-5 fw-semibold pb-3 mb-3 border-bottom">
+        <h2 class="fs-5 fw-semibold pb-3 mb-3 border-bottom">
           Filter Products
-        </h3>
+        </h2>
         <div class="mb-2">
-          <label for="customRange1" class="form-label fs-6 fw-semibold">Price</label>
-          <input type="range" class="form-range" id="customRange1">
+          <label for="customRange2" class="form-label fs-6 fw-semibold">Price</label>
+          <input type="range" class="form-range" id="customRange2">
         </div>
-        <h4 class="fs-6">Plants</h4>
+        <h3 class="fs-6">Plants</h3>
         <ul class="list-unstyled">
           <li class="mb-1 form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulta">
@@ -243,7 +243,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </aside>
 
     <!-- Products -->
     <div class="col-12 col-lg-9 col-xl-10 px-lg-5 cs-products-page">
@@ -397,15 +397,12 @@
         <button type="button" class="btn btn-sm btn-outline-primary">Load More</button>
       </div>
     </div>
-  </div>
-
-
-
+  </section>
 
   <!-- Subscribe Section -->
-  <div class="px-4 py-3 my-4 my-sm-7">
+  <section class="px-4 py-3 my-4 my-sm-7">
     <div class="col-lg-6 mx-auto text-center">
-      <h1 class="display-5 fw-bold text-primary">Subscribe to our Newsletter</h1>
+      <h2 class="display-5 fw-bold text-primary">Subscribe to our Newsletter</h2>
       <p class="lead mb-4">Join our community of garden enthusiasts and get access to exclusive content, tips, and
         inspiration. Subscribing to our newsletter is easy – just enter your email address and start receiving our
         monthly updates straight to your inbox.</p>
@@ -422,7 +419,7 @@
         </div>
       </form>
     </div>
-  </div>
+  </section>
 
   <!-- Payments Banner -->
   <div class="bg-primary">
@@ -430,17 +427,17 @@
       class="container-fluid px-md-5 px-xl-7 py-3 d-flex flex-column flex-lg-row gap-2 justify-content-between align-items-center">
       <p class="fs-5 fw-semibold text-white text-center mb-0">We look forward to helping you create your garden</p>
       <div class="d-flex gap-1 gap-sm-3">
-        <img class="payment-icons" width="48px" src="./assets/svgs/visa-outline.svg" alt="">
-        <img class="payment-icons" width="48px" src="./assets/svgs/mastercard-outline.svg" alt="">
-        <img class="payment-icons" width="48px" src="./assets/svgs/applepay-outline.svg" alt="">
-        <img class="payment-icons" width="48px" src="./assets/svgs/paypal-outline.svg" alt="">
-        <img class="payment-icons" width="48px" src="./assets/svgs/amex-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/visa-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/mastercard-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/applepay-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/paypal-outline.svg" alt="">
+        <img class="payment-icons" width="48" src="./assets/svgs/amex-outline.svg" alt="">
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="cs-footer">
+  <section class="cs-footer">
     <div class="container">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-6 mb-5 border-bottom">
         <div class="col mb-3">
@@ -449,16 +446,16 @@
           </a>
         </div>
         <div class="col mb-3">
-          <h5>Menu</h5>
+          <h3 class="fs-5">Menu</h3>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Home</a></li>
             <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-muted">About</a></li>
             <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-muted">Contact</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Site Map</a></li>
+            <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted">Site Map</a></li>
           </ul>
         </div>
         <div class="col mb-3">
-          <h5>Products</h5>
+          <h3 class="fs-5">Products</h3>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-muted">Plants</a></li>
             <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-muted">Pots</a></li>
@@ -469,16 +466,16 @@
         </div>
         <div class="col mb-3">
           <ul class="nav justify-content-center list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-tiktok"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="/"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="/"><i class="bi bi-facebook"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="/"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="/"><i class="bi bi-tiktok"></i></a></li>
           </ul>
         </div>
       </footer>
       <p class="text-center text-muted pb-4 mb-0">&copy; 2023 George's Garden Center. All rights reserved.</p>
     </div>
-  </div>
+  </section>
 
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
