@@ -35,6 +35,10 @@
   color: $white;
 }
 
+.offcanvas {
+  max-width: 248px;
+}
+
 // Custom styles:
 
 // Homepage carousel
@@ -159,6 +163,30 @@
 // Contact form
 .cs-contact-form {
   max-width: 976px;
+}
+
+// Products page
+.cs-products-page {
+  .card {
+    width: 100%;
+    max-width: 464px;
+  }
+
+  .cs-image-wrapper {
+    overflow: hidden;
+  }
+
+  .cs-card-image {
+    width: 100%;
+    height: 424px;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }
 
 // Footer

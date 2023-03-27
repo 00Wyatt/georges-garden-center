@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - George's Garden Center</title>
+  <link rel="stylesheet" href="./dist/main.css">
+</head>
+
+<body class="bg-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+    <div class="container-fluid mx-md-5 mx-xl-7 my-1 my-sm-2 px-md-0">
+      <a class="navbar-brand me-lg-4 p-0" href="./index.html"><img src="./assets/svgs/logo.svg" height="40"
+          alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3 fw-semibold">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./products.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./products.html">Plants</a></li>
+              <li><a class="dropdown-item" href="./products.html">Pots</a></li>
+              <li><a class="dropdown-item" href="./products.html">Gifts</a></li>
+              <li><a class="dropdown-item" href="./products.html">Garden Tools</a></li>
+              <li><a class="dropdown-item" href="./products.html">Fertilizers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-2">
+          <form class="d-flex me-lg-4" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary text-white" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+          <a type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-person"></i></a>
+          <a type="button" class="btn btn-outline-primary cs-hover"><i class="bi bi-cart2"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="px-4 py-3 mt-5 text-center">
+    <h1 class="display-5 fw-bold text-primary">Plants</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead">Our plants are sourced from the best growers in the business, ensuring that you get the
+        highest quality specimens for your garden.</p>
+    </div>
+  </div>
+
+  <!-- Products Main Content -->
+  <div class="row container-fluid px-md-5 px-xl-7 mx-0 pb-5 border-bottom">
+
+
+    <!-- Filter Offcavas -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="p-3">
+        <h3 class="fs-5 fw-semibold pb-3 mb-3 border-bottom">
+          Filter Products
+        </h3>
+        <div class="mb-2">
+          <label for="customRange1" class="form-label fs-6 fw-semibold">Price</label>
+          <input type="range" class="form-range" id="customRange1">
+        </div>
+        <h4 class="fs-6">Plants</h4>
+        <ul class="list-unstyled">
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+            <label class="form-check-label" for="flexCheckDefault1">
+              Fragrant
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+            <label class="form-check-label" for="flexCheckDefault2">
+              Fruits
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+            <label class="form-check-label" for="flexCheckDefault3">
+              Herbs
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+            <label class="form-check-label" for="flexCheckDefault4">
+              Ground Covers
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+            <label class="form-check-label" for="flexCheckDefault5">
+              Natives
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6" checked>
+            <label class="form-check-label" for="flexCheckChecked6">
+              Indoor
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+            <label class="form-check-label" for="flexCheckDefault7">
+              Hedges
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+            <label class="form-check-label" for="flexCheckDefault8">
+              Potted
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+            <label class="form-check-label" for="flexCheckDefault9">
+              Roses
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+            <label class="form-check-label" for="flexCheckDefault10">
+              Bulbs
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sort/Filter Products Button -->
+    <div class="col-12 mb-4 d-flex justify-content-between justify-content-lg-end">
+      <button class="btn btn-outline-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filter Products</button>
+      <div class="dropdown">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Sort Products
+        </button>
+        <ul class="dropdown-menu">
+          <li class="py-1 px-2">Featured</li>
+          <li class="py-1 px-2">Best Selling</li>
+          <li class="py-1 px-2">Alphabetically: A-Z</li>
+          <li class="py-1 px-2">Alphabetically: Z-A</li>
+          <li class="py-1 px-2">Price: low to high</li>
+          <li class="py-1 px-2">Price: high to low</li>
+          <li class="py-1 px-2">Date: newest first</li>
+          <li class="py-1 px-2">Date: oldest first</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Filter Sidebar -->
+    <div class="d-none d-lg-block col-lg-3 col-xl-2">
+      <div class="p-3">
+        <h3 class="fs-5 fw-semibold pb-3 mb-3 border-bottom">
+          Filter Products
+        </h3>
+        <div class="mb-2">
+          <label for="customRange1" class="form-label fs-6 fw-semibold">Price</label>
+          <input type="range" class="form-range" id="customRange1">
+        </div>
+        <h4 class="fs-6">Plants</h4>
+        <ul class="list-unstyled">
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulta">
+            <label class="form-check-label" for="flexCheckDefaulta">
+              Fragrant
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultb">
+            <label class="form-check-label" for="flexCheckDefaultb">
+              Fruits
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultc">
+            <label class="form-check-label" for="flexCheckDefaultc">
+              Herbs
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultd">
+            <label class="form-check-label" for="flexCheckDefaultd">
+              Ground Covers
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulte">
+            <label class="form-check-label" for="flexCheckDefaulte">
+              Natives
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedf" checked>
+            <label class="form-check-label" for="flexCheckCheckedf">
+              Indoor
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultg">
+            <label class="form-check-label" for="flexCheckDefaultg">
+              Hedges
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulth">
+            <label class="form-check-label" for="flexCheckDefaulth">
+              Potted
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulti">
+            <label class="form-check-label" for="flexCheckDefaulti">
+              Roses
+            </label>
+          </li>
+          <li class="mb-1 form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultj">
+            <label class="form-check-label" for="flexCheckDefaultj">
+              Bulbs
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="col-12 col-lg-9 col-xl-10 px-lg-5 cs-products-page">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 cs-products">
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/yellow-vetchling.jpg" alt="A yellow vetchling">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Yello Vetchling</h3>
+              <p class="text-muted text-center">$22.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/fiddle-leaf-fig.jpg" alt="A fiddle leaf fig">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Fiddle Leaf Fig</h3>
+              <p class="text-muted text-center">$29.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/autumn-olive.jpg" alt="An autumn olive">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Autumn Olive</h3>
+              <p class="text-muted text-center">$34.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/rubberplant.jpg" alt="A rubberplant">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Rubberplant</h3>
+              <p class="text-muted text-center">$29.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/date-palm.jpg" alt="A date palm">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Date Palm</h3>
+              <p class="text-muted text-center">$49.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/mini-monstera.jpg" alt="A mini mostera">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Mini Monstera</h3>
+              <p class="text-muted text-center">$39.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/jackfruit.jpg" alt="A Jackfruit">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Jackfruit</h3>
+              <p class="text-muted text-center">$32.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/dwarf-banana.jpg" alt="A dwarf banana">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Dwarf Banana</h3>
+              <p class="text-muted text-center">$44.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/madonna-lily.jpg" alt="A madonna lily">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Madonna Lily</h3>
+              <p class="text-muted text-center">$54.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/italian-alder.jpg" alt="An italian alder">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Italian Alder</h3>
+              <p class="text-muted text-center">$39.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/common-pricklypear.jpg" alt="An common pricklypear">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Common Pricklypear</h3>
+              <p class="text-muted text-center">$42.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card shadow-sm">
+            <div class="cs-image-wrapper">
+              <img class="cs-card-image" src="./assets/images/pine-rose.jpg" alt="A Pine Rose">
+            </div>
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h3 class="text-center fs-5">Pine Rose</h3>
+              <p class="text-muted text-center">$57.99</p>
+              <button type="button" class="btn btn-sm btn-outline-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center my-5">
+        <button type="button" class="btn btn-sm btn-outline-primary">Load More</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Subscribe Section -->
+  <div class="px-4 py-3 my-4 my-sm-7">
+    <div class="col-lg-6 mx-auto text-center">
+      <h1 class="display-5 fw-bold text-primary">Subscribe to our Newsletter</h1>
+      <p class="lead mb-4">Join our community of garden enthusiasts and get access to exclusive content, tips, and
+        inspiration. Subscribing to our newsletter is easy – just enter your email address and start receiving our
+        monthly updates straight to your inbox.</p>
+    </div>
+    <div class="col-lg-6 mx-auto">
+      <form class="d-flex justify-content-center justify-content-md-between align-items-center">
+        <div class="mb-3 w-100">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <div class="d-flex gap-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Subscribe</button>
+          </div>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Payments Banner -->
+  <div class="bg-primary">
+    <div
+      class="container-fluid px-md-5 px-xl-7 py-3 d-flex flex-column flex-lg-row gap-2 justify-content-between align-items-center">
+      <p class="fs-5 fw-semibold text-white text-center mb-0">We look forward to helping you create your garden</p>
+      <div class="d-flex gap-1 gap-sm-3">
+        <img class="payment-icons" width="48px" src="./assets/svgs/visa-outline.svg" alt="">
+        <img class="payment-icons" width="48px" src="./assets/svgs/mastercard-outline.svg" alt="">
+        <img class="payment-icons" width="48px" src="./assets/svgs/applepay-outline.svg" alt="">
+        <img class="payment-icons" width="48px" src="./assets/svgs/paypal-outline.svg" alt="">
+        <img class="payment-icons" width="48px" src="./assets/svgs/amex-outline.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="cs-footer">
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-6 mb-5 border-bottom">
+        <div class="col mb-3">
+          <a href="./index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none fs-5">
+            <img src="./assets/svgs/logo-alt.svg" height="64" alt="Logo">
+          </a>
+        </div>
+        <div class="col mb-3">
+          <h5>Menu</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-muted">About</a></li>
+            <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-muted">Contact</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Site Map</a></li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5>Products</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-muted">Plants</a></li>
+            <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-muted">Pots</a></li>
+            <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-muted">Gifts</a></li>
+            <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-muted">Garden Tools</a></li>
+            <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-muted">Fertilizers</a></li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <ul class="nav justify-content-center list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-tiktok"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+      <p class="text-center text-muted pb-4 mb-0">&copy; 2023 George's Garden Center. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
